@@ -1,0 +1,2878 @@
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+
+.servicios-container {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.servicios-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+
+.servicios-header > div:first-child {
+    min-width: 0;
+}
+
+.servicios-header h1 {
+    margin: 0 0 6px;
+    color: #1f2937;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.servicios-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.btn-nueva {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-nueva:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   RESUMEN
+========================================================= */
+
+.servicios-resumen {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.resumen-card {
+    min-width: 0;
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.resumen-icono {
+    width: 36px;
+    height: 36px;
+
+    flex: 0 0 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.resumen-card > div:last-child {
+    min-width: 0;
+}
+
+.resumen-card span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #6b7280;
+    font-size: 11px;
+}
+
+.resumen-card strong {
+    display: block;
+
+    color: #111827;
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+.servicios-filtros {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(280px, 2fr) repeat(3, minmax(150px, 1fr));
+    gap: 12px;
+
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.busqueda-container {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 12px;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+}
+
+.busqueda-container span {
+    flex: 0 0 auto;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.busqueda-container input {
+    width: 100%;
+    min-width: 0;
+
+    padding: 10px 4px;
+
+    border: none !important;
+    outline: none;
+}
+
+.servicios-filtros select {
+    width: 100%;
+    min-width: 0;
+
+    padding: 10px;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #374151;
+    outline: none;
+}
+
+
+/* =========================================================
+   FORMULARIO PRINCIPAL
+========================================================= */
+
+.solicitud-form {
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER DEL FORMULARIO
+========================================================= */
+
+.form-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px 22px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-header > div:first-child {
+    min-width: 0;
+}
+
+.form-header h2 {
+    margin: 0 0 7px;
+
+    color: #111827;
+    font-size: 20px;
+}
+
+.btn-cerrar {
+    width: 35px;
+    height: 35px;
+
+    flex: 0 0 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 6px;
+
+    background: transparent;
+    color: #6b7280;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-cerrar:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.codigo-solicitud {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 9px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mensaje-formulario {
+    margin: 15px 22px 0;
+    padding: 11px 14px;
+
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 7px;
+
+    color: #c2410c;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.form-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 25px 22px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-title {
+    margin-bottom: 22px;
+}
+
+.section-title > span {
+    display: none;
+}
+
+.section-title h3 {
+    margin: 0 0 5px;
+
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section-title p {
+    margin: 0;
+
+    color: #9ca3af;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   REGLAS GENERALES DE GRIDS
+========================================================= */
+
+.form-grid,
+.documento-grid,
+.datos-personales-grid,
+.contacto-grid,
+.equipo-grid,
+.recepcion-grid,
+.verificacion-grid,
+.problema-grid,
+.clasificacion-grid {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-grid > *,
+.documento-grid > *,
+.datos-personales-grid > *,
+.contacto-grid > *,
+.equipo-grid > *,
+.recepcion-grid > *,
+.verificacion-grid > *,
+.problema-grid > *,
+.clasificacion-grid > * {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CLIENTE
+========================================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.documento-grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) minmax(300px, 2fr);
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.datos-personales-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
+    gap: 18px;
+}
+
+
+/* =========================================================
+   EQUIPO
+========================================================= */
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CLASIFICACIÓN DEL SERVICIO
+========================================================= */
+
+/*
+   Cada elemento ocupa una columna independiente.
+   Nada se solapa y todos los campos mantienen
+   la misma separación.
+*/
+
+.clasificacion-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    column-gap: 24px;
+    row-gap: 22px;
+
+    align-items: start;
+}
+
+.clasificacion-grid > .campo {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   RECEPCIÓN
+========================================================= */
+
+.recepcion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* =========================================================
+   VERIFICACIÓN
+========================================================= */
+
+.verificacion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* =========================================================
+   PROBLEMA
+========================================================= */
+
+.problema-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CAMPOS
+========================================================= */
+
+.campo {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 8px;
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    width: 100%;
+    box-sizing: border-box;
+
+    color: #374151;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 11px 12px;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #1f2937;
+    font-family: inherit;
+    font-size: 13px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.campo input,
+.campo select {
+    min-height: 42px;
+}
+
+.campo textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================================================
+   DOCUMENTO
+========================================================= */
+
+.documento-input {
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+    gap: 9px;
+}
+
+.documento-input input {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.documento-input button {
+    flex: 0 0 auto;
+
+    min-height: 42px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #374151;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.documento-input button:hover {
+    background: #1f2937;
+}
+
+
+/* =========================================================
+   TIPO DE ATENCIÓN
+========================================================= */
+
+.opciones-atencion {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.opcion-atencion {
+    width: 100%;
+    min-width: 0;
+    min-height: 76px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.opcion-atencion:hover {
+    background: #f8fbff;
+    border-color: #93c5fd;
+}
+
+.opcion-atencion.seleccionada {
+    background: #eff6ff;
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+.opcion-atencion input {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+
+    margin: 0;
+
+    accent-color: #2563eb;
+}
+
+.opcion-atencion-contenido {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.opcion-atencion-contenido strong {
+    color: #1f2937;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.opcion-atencion-contenido span {
+    color: #6b7280;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PRESUPUESTO
+========================================================= */
+
+.opciones-presupuesto {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.opcion-presupuesto {
+    min-height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 14px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #374151;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.opcion-presupuesto:hover {
+    background: #f8fbff;
+    border-color: #93c5fd;
+}
+
+.opcion-presupuesto.seleccionada {
+    background: #eff6ff;
+    border-color: #2563eb;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.opcion-presupuesto input {
+    width: 15px;
+    height: 15px;
+
+    flex: 0 0 15px;
+
+    margin: 0;
+
+    accent-color: #2563eb;
+}
+
+
+/* =========================================================
+   GARANTÍA
+========================================================= */
+
+.garantia-evaluacion {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 22px;
+    padding: 20px;
+
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+}
+
+.garantia-evaluacion-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.garantia-evaluacion-icono {
+    width: 34px;
+    height: 34px;
+
+    flex: 0 0 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fef3c7;
+    border-radius: 7px;
+}
+
+.garantia-evaluacion-header > div:last-child {
+    min-width: 0;
+}
+
+.garantia-evaluacion-header h4 {
+    margin: 0 0 5px;
+
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.garantia-evaluacion-header p {
+    margin: 0;
+
+    color: #6b7280;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CAMPOS DE GARANTÍA
+========================================================= */
+
+.garantia-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.garantia-validacion {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.garantia-validacion label {
+    color: #374151;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.garantia-validacion select,
+.garantia-validacion input {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+
+    box-sizing: border-box;
+
+    padding: 9px 10px;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #374151;
+    font-size: 12px;
+
+    outline: none;
+}
+
+.garantia-validacion select:focus,
+.garantia-validacion input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   RESULTADO GARANTÍA
+========================================================= */
+
+.garantia-resultado {
+    width: 100%;
+
+    margin-top: 20px;
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.garantia-resultado > label {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #374151;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.garantia-resultado-opciones {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.garantia-resultado-opcion {
+    min-height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #374151;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.garantia-resultado-opcion:hover {
+    background: #f8fbff;
+    border-color: #93c5fd;
+}
+
+.garantia-resultado-opcion input {
+    width: 15px;
+    height: 15px;
+
+    flex: 0 0 15px;
+
+    margin: 0;
+
+    accent-color: #2563eb;
+}
+
+
+/* =========================================================
+   GARANTÍA NO PROCEDE
+========================================================= */
+
+.garantia-no-procede {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 16px;
+    padding: 15px;
+
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 7px;
+}
+
+.garantia-no-procede p {
+    margin: 0 0 12px;
+
+    color: #9a3412;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.atencion-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.atencion-particular {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.atencion-garantia {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* =========================================================
+   ACCIONES DEL FORMULARIO
+========================================================= */
+
+.form-actions {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 18px 22px;
+
+    background: #fafafa;
+}
+
+.btn-cancelar,
+.btn-guardar {
+    min-height: 40px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.btn-cancelar:hover {
+    background: #e5e7eb;
+}
+
+.btn-guardar {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-guardar:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   TABLA
+========================================================= */
+
+.tabla-container {
+    width: 100%;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.tabla-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla-header > div {
+    min-width: 0;
+}
+
+.tabla-header h2 {
+    margin: 0 0 4px;
+
+    color: #1f2937;
+    font-size: 17px;
+}
+
+.tabla-header span {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.tabla-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 1050px;
+
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f9fafb;
+}
+
+th {
+    padding: 12px 15px;
+
+    text-align: left;
+    white-space: nowrap;
+
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    padding: 13px 15px;
+
+    color: #374151;
+    font-size: 12px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+td strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1f2937;
+    font-size: 12px;
+}
+
+td small {
+    display: block;
+
+    color: #9ca3af;
+    font-size: 10px;
+}
+
+.codigo-tabla {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.codigo-link {
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.codigo-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   ESTADOS
+========================================================= */
+
+.estado {
+    display: inline-flex;
+    align-items: center;
+
+    max-width: 170px;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.estado-diagnóstico {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.estado-presupuesto {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.estado-pendiente-de-reparación {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.estado-mesa-de-reparación {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.estado-reparación-suspendida {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.estado-presupuesto-aprobado {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.estado-control-de-calidad {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.estado-almacén-de-reparados {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.estado-almacén-sin-reparar {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+
+/* =========================================================
+   PRIORIDADES
+========================================================= */
+
+.prioridad {
+    display: inline-flex;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.prioridad-baja {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.prioridad-normal {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.prioridad-alta {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.prioridad-urgente {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+
+/* =========================================================
+   ACCIONES TABLA
+========================================================= */
+
+.acciones-tabla {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-accion {
+    width: 30px;
+    height: 30px;
+
+    flex: 0 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+.btn-accion:hover {
+    background: #f3f4f6;
+}
+
+.btn-ver:hover {
+    border-color: #93c5fd;
+    background: #eff6ff;
+}
+
+.btn-eliminar:hover {
+    border-color: #fecaca;
+    background: #fef2f2;
+}
+
+
+/* =========================================================
+   TABLA VACÍA
+========================================================= */
+
+.tabla-vacia {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.tabla-vacia > div {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.tabla-vacia h3 {
+    margin: 0 0 6px;
+
+    color: #374151;
+    font-size: 16px;
+}
+
+.tabla-vacia p {
+    margin: 0;
+
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.detalle-modal {
+    width: min(1000px, 100%);
+    max-height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.detalle-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 24px;
+
+    background: #fafafa;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.detalle-header > div:first-child {
+    min-width: 0;
+}
+
+.detalle-header > div > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #6b7280;
+    font-size: 11px;
+}
+
+.detalle-header h2 {
+    margin: 0 0 10px;
+
+    color: #111827;
+    font-size: 22px;
+}
+
+.detalle-header-badges {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   MODAL BODY
+========================================================= */
+
+.detalle-body {
+    padding: 22px 24px;
+
+    overflow-y: auto;
+}
+
+.detalle-card {
+    margin-bottom: 14px;
+    padding: 17px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+}
+
+.detalle-card-title {
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #1f2937;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.detalle-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.detalle-info-grid > div {
+    min-width: 0;
+}
+
+.detalle-info-grid > div > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #9ca3af;
+    font-size: 10px;
+
+    text-transform: uppercase;
+}
+
+.detalle-info-grid > div > strong {
+    display: block;
+
+    color: #374151;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.detalle-texto {
+    margin: 0;
+
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.6;
+
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   CAMBIO DE ESTADO
+========================================================= */
+
+.cambio-estado select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    color: #374151;
+    outline: none;
+}
+
+.cambio-estado select:focus {
+    border-color: #2563eb;
+}
+
+/* =========================================================
+   TIMELINE - HISTORIAL REAL DEL SERVICIO
+========================================================= */
+
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 2px 0 2px 4px;
+    box-sizing: border-box;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    min-height: 70px;
+    padding: 0;
+}
+
+/* Línea que conecta los estados */
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    bottom: 0;
+    width: 2px;
+    background: #dbe3ef;
+}
+
+/* Línea azul para estados ya recorridos */
+.timeline-item.completado:not(:last-child)::before {
+    background: #93c5fd;
+}
+
+/* Punto del timeline */
+.timeline-dot {
+    width: 21px;
+    height: 21px;
+    flex: 0 0 21px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+
+    background: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+/* Estados completados */
+.timeline-item.completado .timeline-dot {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+/* Estado actual */
+.timeline-item.actual .timeline-dot {
+    background: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px #dbeafe;
+}
+
+/* Contenido de cada cambio */
+.timeline-content {
+    min-width: 0;
+    flex: 1;
+    padding: 0 0 22px;
+}
+
+/* Nombre del estado */
+.timeline-content strong {
+    display: block;
+    margin: 0;
+    padding: 1px 0 0;
+
+    color: #1f2937;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Estado actual un poco más destacado */
+.timeline-item.actual .timeline-content strong {
+    color: #1d4ed8;
+}
+
+/* "Desde: Estado anterior" */
+.timeline-content span:not(.estado-actual-label) {
+    display: block;
+    margin-top: 4px;
+
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Fecha */
+.timeline-content small {
+    display: block;
+    margin-top: 5px;
+
+    color: #9ca3af;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+/* Observación */
+.timeline-content p {
+    margin: 7px 0 0;
+    padding: 8px 10px;
+
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+
+    color: #4b5563;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Etiqueta "Estado actual" */
+.timeline-content .estado-actual-label {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 7px;
+    padding: 4px 8px;
+
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 5px;
+
+    color: #1d4ed8;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* =========================================================
+   TIMELINE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .timeline-item {
+        gap: 10px;
+        min-height: 65px;
+    }
+
+    .timeline-content {
+        padding-bottom: 18px;
+    }
+
+    .timeline-content strong {
+        font-size: 12px;
+    }
+
+    .timeline-content p {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.detalle-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 15px 24px;
+
+    background: #fafafa;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1300
+========================================================= */
+
+@media (max-width: 1300px) {
+
+    .servicios-resumen {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contacto-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .verificacion-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .detalle-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .clasificacion-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .servicios-filtros {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 900
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .documento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-personales-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contacto-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .verificacion-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 700
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .servicios-container {
+        padding: 15px;
+    }
+
+    .servicios-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-nueva {
+        width: 100%;
+    }
+
+    .servicios-resumen {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .servicios-filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid,
+    .datos-personales-grid,
+    .contacto-grid,
+    .equipo-grid,
+    .clasificacion-grid,
+    .recepcion-grid,
+    .verificacion-grid,
+    .problema-grid,
+    .garantia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .opciones-atencion {
+        grid-template-columns: 1fr;
+    }
+
+    .opciones-presupuesto,
+    .garantia-resultado-opciones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .opcion-presupuesto,
+    .garantia-resultado-opcion {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    .modal-overlay {
+        padding: 8px;
+    }
+
+    .detalle-modal {
+        max-height: 96vh;
+    }
+
+    .detalle-header {
+        padding: 16px;
+    }
+
+    .detalle-body {
+        padding: 15px;
+    }
+
+    .detalle-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+
+        padding: 12px 15px;
+    }
+
+    .detalle-footer button {
+        width: 100%;
+    }
+
+    .detalle-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 480
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .servicios-resumen {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        padding: 18px 15px;
+    }
+
+    .form-header {
+        padding: 16px;
+    }
+
+    .documento-input {
+        flex-direction: column;
+    }
+
+    .documento-input button {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-bottom: 17px;
+    }
+
+    .garantia-evaluacion {
+        padding: 14px;
+    }
+
+    .garantia-evaluacion-header {
+        gap: 9px;
+    }
+
+    .garantia-evaluacion-icono {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+    }
+}
+/* =========================================================
+   CLASIFICACIÓN DEL SERVICIO
+   ESTRUCTURA ORDENADA
+========================================================= */
+
+.clasificacion-atencion {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.clasificacion-atencion > .campo {
+    width: 100%;
+}
+
+.clasificacion-atencion .campo-ayuda {
+    margin: 6px 0 14px;
+}
+
+
+/* TIPO DE ATENCIÓN */
+
+.atencion-opciones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.atencion-opciones .radio-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 90px;
+    margin: 0;
+    padding: 18px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    border: 1px solid #d9dee7;
+    border-radius: 10px;
+    background: #ffffff;
+
+    cursor: pointer;
+    transition: border-color 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.atencion-opciones .radio-card:hover {
+    border-color: #b8c1cf;
+}
+
+.atencion-opciones .radio-card-activo {
+    border-color: #2563eb;
+    background: #f5f8ff;
+    box-shadow: 0 0 0 1px #2563eb;
+}
+
+.atencion-opciones .radio-card input {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    margin: 3px 0 0;
+}
+
+.atencion-opciones .radio-card > div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.atencion-opciones .radio-card strong {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.atencion-opciones .radio-card span {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* DATOS OPERATIVOS */
+
+.clasificacion-datos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+    align-items: start;
+}
+
+.clasificacion-datos .campo {
+    min-width: 0;
+}
+
+
+/* SUBSECCIONES */
+
+.clasificacion-subseccion {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 20px;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    background: #fafbfc;
+}
+
+.subseccion-titulo {
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+
+/* PRESUPUESTO */
+
+.presupuesto-opciones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.presupuesto-opciones .radio-inline {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+/* GARANTÍA */
+
+.garantia-panel {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 24px;
+    padding: 22px;
+
+    border: 1px solid #d9dee7;
+    border-radius: 12px;
+    background: #fafbfc;
+}
+
+.garantia-header {
+    width: 100%;
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.garantia-header > div {
+    min-width: 0;
+}
+
+.garantia-header h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+}
+
+.garantia-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.garantia-resultado {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+
+/* CAMPOS DE GARANTÍA */
+
+.garantia-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.garantia-grid .campo {
+    min-width: 0;
+}
+
+
+/* RESULTADO */
+
+.garantia-resultado-section {
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e5eb;
+}
+
+.resultado-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.resultado-opciones .radio-inline {
+    min-width: 120px;
+}
+
+
+/* GARANTÍA NO PROCEDENTE */
+
+.garantia-rechazada {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 18px;
+
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    background: #ffffff;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.garantia-rechazada .campo {
+    min-width: 0;
+}
+
+
+/* OBSERVACIONES */
+
+.garantia-observaciones {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* RADIOS NORMALES */
+
+.radio-inline {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.radio-inline input {
+    flex: 0 0 auto;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .clasificacion-datos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .garantia-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .atencion-opciones {
+        grid-template-columns: 1fr;
+    }
+
+    .presupuesto-opciones {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-rechazada {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .clasificacion-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-header {
+        flex-direction: column;
+    }
+
+    .garantia-panel {
+        padding: 16px;
+    }
+
+}
+/* =========================================================
+   CLASIFICACIÓN DEL SERVICIO
+   CORREGIDO PARA EL JSX ACTUAL
+========================================================= */
+
+/* =========================================================
+   TIPO DE ATENCIÓN
+========================================================= */
+
+.atencion-container {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.atencion-container > .campo {
+    width: 100%;
+}
+
+.campo-ayuda {
+    margin: 6px 0 14px;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Contenedor de las tarjetas Servicio particular / Garantía */
+.atencion-container .opciones-radio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* Tarjetas de tipo de atención */
+.radio-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 82px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin: 0;
+    padding: 15px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.radio-card:hover {
+    border-color: #93c5fd;
+    background: #f8fbff;
+}
+
+.radio-card-activo {
+    border-color: #2563eb;
+    background: #eff6ff;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.15);
+}
+
+.radio-card input {
+    width: 17px;
+    height: 17px;
+
+    flex: 0 0 17px;
+
+    margin: 2px 0 0;
+
+    accent-color: #2563eb;
+}
+
+.radio-card > div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-card strong {
+    color: #1f2937;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.radio-card span {
+    color: #6b7280;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PRESUPUESTO / ATENCIÓN PARTICULAR
+========================================================= */
+
+.atencion-subseccion {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 24px;
+    padding: 18px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+
+    background: #fafafa;
+}
+
+.subseccion-titulo {
+    margin-bottom: 15px;
+
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Opciones Sí / No del presupuesto */
+.atencion-subseccion .opciones-radio {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   RADIOS EN FORMA DE BOTÓN
+========================================================= */
+
+.radio-inline {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 0;
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #374151;
+    font-size: 12px;
+    line-height: 1.35;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.radio-inline:hover {
+    border-color: #93c5fd;
+    background: #f8fbff;
+}
+
+.radio-inline input {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+
+    margin: 0;
+
+    accent-color: #2563eb;
+}
+
+
+/* =========================================================
+   GARANTÍA
+========================================================= */
+
+.garantia-panel {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 24px;
+    padding: 22px;
+
+    border: 1px solid #d9dee7;
+    border-radius: 12px;
+
+    background: #fafbfc;
+}
+
+.garantia-header {
+    width: 100%;
+
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.garantia-header > div {
+    min-width: 0;
+}
+
+.garantia-header h3 {
+    margin: 0 0 6px;
+
+    color: #1f2937;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.garantia-header p {
+    margin: 0;
+
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESULTADO DE GARANTÍA - BADGE DEL HEADER
+========================================================= */
+
+/*
+   IMPORTANTE:
+   En el JSX .garantia-resultado es el SPAN del resultado,
+   no el contenedor de opciones.
+   Por eso sobrescribimos el CSS antiguo.
+*/
+
+.garantia-header .garantia-resultado {
+    width: auto;
+
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 6px 10px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    white-space: nowrap;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Estados del resultado */
+
+.garantia-header .resultado-pendiente {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.garantia-header .resultado-procede {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.garantia-header .resultado-no-procede {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+
+/* =========================================================
+   CAMPOS DE GARANTÍA
+========================================================= */
+
+.garantia-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+.garantia-grid .campo {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   RESULTADO DE LA EVALUACIÓN
+========================================================= */
+
+.garantia-resultado-section {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 24px;
+    padding-top: 20px;
+
+    border-top: 1px solid #e1e5eb;
+}
+
+.garantia-resultado-section .campo {
+    width: 100%;
+}
+
+/*
+   Aquí hay 3 opciones:
+   Pendiente / Procede / No procede
+*/
+
+.garantia-resultado-section .opciones-radio {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   GARANTÍA NO PROCEDE
+========================================================= */
+
+.garantia-rechazada {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 20px;
+    padding: 18px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+.garantia-rechazada .campo {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/*
+   Las opciones de "continuar como particular"
+   y "requiere presupuesto" ocupan todo su ancho.
+*/
+
+.garantia-rechazada .opciones-radio {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   OBSERVACIONES DE GARANTÍA
+========================================================= */
+
+.garantia-panel > .campo-completo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .garantia-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 800
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .atencion-container .opciones-radio {
+        grid-template-columns: 1fr;
+    }
+
+    .atencion-subseccion .opciones-radio {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-resultado-section .opciones-radio {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-rechazada {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-rechazada .opciones-radio {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 650
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .garantia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .garantia-panel {
+        padding: 16px;
+    }
+
+    .garantia-header .garantia-resultado {
+        align-self: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 480
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .radio-card {
+        min-height: auto;
+        padding: 13px;
+    }
+
+    .garantia-rechazada {
+        padding: 14px;
+    }
+
+}
+/* =========================================================
+   ESPACIADO DE CAMPOS CUANDO SE USA RUC
+========================================================= */
+
+.documento-grid {
+    row-gap: 22px;
+}
+
+.documento-grid .campo {
+    gap: 10px;
+}
+
+.documento-grid .campo label {
+    margin-bottom: 2px;
+}
+
+/* Si aparecen los datos adicionales del RUC */
+.datos-personales-grid {
+    row-gap: 22px;
+}
+
+.contacto-grid {
+    row-gap: 22px;
+}
+
+/* Separación entre el bloque de documento y los datos personales */
+.documento-grid + .datos-personales-grid {
+    margin-top: 6px;
+}
+
+/* Mejor separación entre label e input/select */
+.documento-grid .campo input,
+.documento-grid .campo select,
+.datos-personales-grid .campo input,
+.datos-personales-grid .campo select,
+.contacto-grid .campo input,
+.contacto-grid .campo select {
+    margin-top: 2px;
+}
+.documento-grid {
+    margin-bottom: 24px;
+}
+
+.datos-personales-grid {
+    margin-bottom: 24px;
+}
+
+.documento-grid .campo,
+.datos-personales-grid .campo,
+.contacto-grid .campo {
+    gap: 10px;
+}
+/* Separar claramente Razón social del bloque inferior */
+.datos-personales-grid {
+    margin-bottom: 28px;
+}
+
+.datos-personales-grid .campo-completo {
+    margin-bottom: 6px;
+}
+
+.contacto-grid {
+    margin-top: 4px;
+}
+/* =========================================================
+   DATOS DEL CLIENTE - ESPACIADO
+========================================================= */
+
+.documento-grid {
+    margin-bottom: 22px;
+}
+
+/* Espacio entre Razón social y los datos de contacto */
+.datos-personales-grid {
+    margin-bottom: 24px;
+    row-gap: 20px;
+}
+
+/* Separación entre el label y su campo */
+.documento-grid .campo,
+.datos-personales-grid .campo,
+.contacto-grid .campo {
+    gap: 9px;
+}
+
+/* Un poco más de aire después de Razón social */
+.datos-personales-grid .campo-completo {
+    margin-bottom: 4px;
+}
+
+/* Espaciado entre filas del bloque de contacto */
+.contacto-grid {
+    row-gap: 22px;
+}
+/* Baja ligeramente los labels de esta sección */
+.documento-grid .campo label,
+.datos-personales-grid .campo label,
+.contacto-grid .campo label {
+    transform: translateY(3px);
+}
+/* =========================================================
+   ACTUALIZAR ESTADO - SELECT
+========================================================= */
+
+.detalle-card select {
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 38px 9px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    appearance: auto;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.detalle-card select:hover {
+    border-color: #9ca3af;
+}
+
+.detalle-card select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.detalle-card select:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Opción inicial */
+.detalle-card select option[value=""] {
+    color: #9ca3af;
+}
+
+/* Estado cerrado */
+.detalle-card input:disabled {
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    font-size: 13px;
+    box-sizing: border-box;
+}

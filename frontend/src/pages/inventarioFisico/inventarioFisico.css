@@ -1,0 +1,463 @@
+.inventario-fisico-container {
+    padding: 24px;
+    width: 100%;
+}
+
+.inventario-fisico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.inventario-fisico-header h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+}
+
+.inventario-fisico-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.btn-nuevo-inventario {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.inventario-fisico-filtros {
+    display: grid;
+    grid-template-columns: 200px 200px 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.inventario-fisico-filtros select,
+.inventario-fisico-filtros input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: white;
+    outline: none;
+}
+
+.inventario-fisico-filtros input:focus,
+.inventario-fisico-filtros select:focus {
+    border-color: #2563eb;
+}
+
+.inventario-fisico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.inventario-fisico-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.inventario-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.inventario-card-header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inventario-codigo {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.inventario-fecha {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.inventario-estado {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 20px;
+}
+
+.estado-borrador {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.estado-con-diferencias {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.estado-conciliado {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.inventario-card-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.inventario-card-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inventario-card-info span {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.inventario-card-info strong {
+    font-size: 14px;
+}
+
+.inventario-card-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 14px;
+}
+
+.btn-accion {
+    border: 1px solid #d1d5db;
+    background: white;
+    padding: 8px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-accion:hover {
+    background: #f9fafb;
+}
+
+.btn-eliminar {
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+.inventario-vacio {
+    padding: 40px;
+    text-align: center;
+    color: #6b7280;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+/* MODAL */
+
+.modal-inventario {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-inventario-contenido {
+    width: 100%;
+    max-width: 720px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.modal-inventario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.modal-inventario-header h2 {
+    margin: 0 0 5px;
+}
+
+.modal-inventario-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.btn-cerrar-modal {
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.form-checkbox input {
+    margin-top: 3px;
+}
+
+.form-checkbox strong {
+    font-size: 14px;
+}
+
+.form-checkbox p {
+    margin: 4px 0 0;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.modal-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+.btn-cancelar-inventario,
+.btn-crear-inventario {
+    border: none;
+    padding: 10px 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-cancelar-inventario {
+    background: #f3f4f6;
+}
+
+.btn-crear-inventario {
+    background: #2563eb;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .inventario-fisico-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .inventario-fisico-filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .inventario-card-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .inventario-fisico-container {
+        padding: 16px;
+    }
+
+    .inventario-card-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .inventario-card-header > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inventario-card-info {
+        grid-template-columns: 1fr;
+    }
+
+    .inventario-card-acciones {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+/* =========================================
+   ACCIONES DEL INVENTARIO
+========================================= */
+
+.inventario-card-acciones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    margin-top: 4px;
+}
+
+.btn-accion {
+    min-width: 105px;
+    height: 38px;
+    padding: 0 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.btn-accion:hover {
+    background: #f8fafc;
+    border-color: #9ca3af;
+}
+
+.btn-accion:active {
+    transform: translateY(1px);
+}
+
+/* Reporte */
+
+.btn-reporte {
+    color: #374151;
+}
+
+/* Resultados */
+
+.btn-resultados {
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+
+.btn-resultados:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+}
+
+/* Diferencias */
+
+.btn-diferencias {
+    color: #d97706;
+    border-color: #fed7aa;
+}
+
+.btn-diferencias:hover {
+    background: #fff7ed;
+    border-color: #fdba74;
+}
+
+/* Eliminar */
+
+.btn-eliminar {
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+.btn-eliminar:hover {
+    background: #fef2f2;
+    border-color: #fca5a5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .inventario-card-acciones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .btn-accion {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .inventario-card-acciones {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-accion {
+        width: 100%;
+    }
+}

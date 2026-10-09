@@ -1,0 +1,1019 @@
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+
+.pedido-repuestos-container {
+    width: 100%;
+    padding: 28px;
+    box-sizing: border-box;
+    color: #1f2937;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pedido-repuestos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.pedido-repuestos-header h1 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.pedido-repuestos-header p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BOTÓN NUEVO PEDIDO
+========================================================= */
+
+.btn-nuevo-pedido {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-nuevo-pedido:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   PESTAÑAS
+========================================================= */
+
+.pedido-tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+.pedido-tabs button {
+    border: none;
+    background: transparent;
+    padding: 12px 20px;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.pedido-tabs button:hover {
+    color: #2563eb;
+}
+
+.pedido-tabs button.tab-activa {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+
+/* =========================================================
+   FORMULARIO PRINCIPAL
+========================================================= */
+
+.pedido-formulario {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER DEL FORMULARIO
+========================================================= */
+
+.pedido-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 22px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pedido-form-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #111827;
+}
+
+.pedido-form-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.btn-cerrar-pedido {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.btn-cerrar-pedido:hover {
+    background: #e5e7eb;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.pedido-seccion {
+    padding: 22px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pedido-seccion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.pedido-seccion-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.pedido-seccion-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BÚSQUEDA DE ORDEN
+========================================================= */
+
+.pedido-busqueda-orden {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.pedido-busqueda-orden input {
+    flex: 1;
+    min-width: 0;
+    padding: 11px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.pedido-busqueda-orden input:focus {
+    border-color: #2563eb;
+}
+
+.pedido-busqueda-orden button {
+    border: none;
+    background: #374151;
+    color: white;
+    padding: 0 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pedido-busqueda-orden button:hover {
+    background: #1f2937;
+}
+
+
+/* =========================================================
+   RESULTADOS DE ÓRDENES
+========================================================= */
+
+.pedido-resultados-orden {
+    margin-top: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    overflow-x: auto;
+}
+
+.pedido-resultados-orden table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.pedido-resultados-orden th {
+    background: #f9fafb;
+    padding: 12px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pedido-resultados-orden td {
+    padding: 12px;
+    font-size: 13px;
+    color: #4b5563;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.pedido-resultados-orden tbody tr:hover {
+    background: #f9fafb;
+}
+
+.pedido-sin-resultados {
+    padding: 25px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.btn-seleccionar-pedido {
+    border: none;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 7px 11px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-seleccionar-pedido:hover {
+    background: #dbeafe;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DE LA ORDEN
+========================================================= */
+
+.pedido-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.pedido-info-grid > div {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    padding: 13px 15px;
+}
+
+.pedido-info-grid span {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.pedido-info-grid strong {
+    display: block;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   GRID DE CONFIGURACIÓN
+========================================================= */
+
+.pedido-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.campo-pedido {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-pedido.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.campo-pedido label {
+    margin-bottom: 7px;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.campo-pedido input,
+.campo-pedido select,
+.campo-pedido textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 10px 12px;
+    background: white;
+    color: #1f2937;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.campo-pedido input:focus,
+.campo-pedido select:focus,
+.campo-pedido textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+.campo-pedido textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+
+/* =========================================================
+   BOTÓN AGREGAR REPUESTO
+========================================================= */
+
+.btn-agregar-repuesto-pedido {
+    border: 1px solid #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-agregar-repuesto-pedido:hover {
+    background: #dbeafe;
+}
+
+
+/* =========================================================
+   TABLA DE REPUESTOS
+========================================================= */
+
+.pedido-repuestos-tabla {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+}
+
+.pedido-repuestos-tabla table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+}
+
+.pedido-repuestos-tabla th {
+    padding: 11px 9px;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pedido-repuestos-tabla td {
+    padding: 9px;
+    font-size: 12px;
+    color: #4b5563;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.pedido-repuestos-tabla tbody tr:hover {
+    background: #fafafa;
+}
+
+.pedido-repuestos-tabla input,
+.pedido-repuestos-tabla select {
+    width: 100%;
+    min-width: 70px;
+    box-sizing: border-box;
+    padding: 7px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background: white;
+    color: #374151;
+    font-size: 12px;
+    outline: none;
+}
+
+.pedido-repuestos-tabla input:focus,
+.pedido-repuestos-tabla select:focus {
+    border-color: #2563eb;
+}
+
+.pedido-repuestos-tabla td:nth-child(1) select {
+    min-width: 105px;
+}
+
+.pedido-repuestos-tabla td:nth-child(2) input {
+    min-width: 180px;
+}
+
+.stock-pedido {
+    display: inline-flex;
+    min-width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #f3f4f6;
+    color: #374151;
+    font-weight: 700;
+}
+
+.cantidad-devuelta {
+    font-weight: 700;
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   ELIMINAR DETALLE
+========================================================= */
+
+.btn-eliminar-detalle-pedido {
+    border: none;
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-eliminar-detalle-pedido:hover {
+    background: #fecaca;
+}
+
+
+/* =========================================================
+   ACCIONES DEL FORMULARIO
+========================================================= */
+
+.pedido-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 18px 24px;
+    background: #fafafa;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-cancelar-pedido {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-cancelar-pedido:hover {
+    background: #f3f4f6;
+}
+
+.btn-guardar-pedido {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-guardar-pedido:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+.pedido-filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.pedido-filtros input,
+.pedido-filtros select {
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #374151;
+    outline: none;
+}
+
+.pedido-filtros input {
+    width: 330px;
+}
+
+.pedido-filtros select {
+    min-width: 180px;
+}
+
+.pedido-filtros input:focus,
+.pedido-filtros select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================================
+   TABLAS PRINCIPALES
+========================================================= */
+
+.pedido-tabla-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.pedido-tabla-container table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.pedido-tabla-container th {
+    background: #f9fafb;
+    padding: 12px 11px;
+    text-align: left;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.pedido-tabla-container td {
+    padding: 12px 11px;
+    color: #4b5563;
+    font-size: 13px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.pedido-tabla-container tbody tr:hover {
+    background: #fafafa;
+}
+
+.pedido-tabla-vacia {
+    text-align: center !important;
+    padding: 45px 20px !important;
+    color: #9ca3af !important;
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   CÓDIGOS
+========================================================= */
+
+.codigo-pedido,
+.codigo-devolucion {
+    color: #2563eb;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PRIORIDADES
+========================================================= */
+
+.prioridad-pedido {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.prioridad-baja {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.prioridad-normal {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.prioridad-alta {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.prioridad-urgente {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================================================
+   ESTADOS PEDIDOS
+========================================================= */
+
+.estado-pedido,
+.estado-entrega-pedido,
+.estado-devolucion-pedido {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.estado-pendiente {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.estado-atendido-parcialmente {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.estado-atendido {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.estado-entrega-pedido {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+/* =========================================================
+   ESTADO DEVOLUCIÓN
+========================================================= */
+
+.estado-devolucion-pedido {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* =========================================================
+   BOTONES DE ACCIÓN
+========================================================= */
+
+.btn-accion-pedido {
+    border: none;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 7px 9px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-accion-pedido:hover {
+    background: #dbeafe;
+}
+
+.btn-eliminar-pedido {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-eliminar-pedido:hover {
+    background: #fecaca;
+}
+
+.btn-devolucion-pedido {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+
+.btn-devolucion-pedido:hover {
+    background: #e9d5ff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .pedido-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pedido-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .pedido-repuestos-container {
+        padding: 16px;
+    }
+
+    .pedido-repuestos-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .pedido-repuestos-header h1 {
+        font-size: 22px;
+    }
+
+    .btn-nuevo-pedido {
+        width: 100%;
+    }
+
+    .pedido-tabs {
+        overflow-x: auto;
+    }
+
+    .pedido-tabs button {
+        white-space: nowrap;
+        padding: 11px 15px;
+    }
+
+    .pedido-info-grid,
+    .pedido-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pedido-seccion {
+        padding: 18px;
+    }
+
+    .pedido-seccion-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pedido-busqueda-orden {
+        flex-direction: column;
+    }
+
+    .pedido-busqueda-orden button {
+        padding: 10px;
+    }
+
+    .pedido-filtros {
+        flex-direction: column;
+    }
+
+    .pedido-filtros input {
+        width: 100%;
+    }
+
+    .pedido-filtros select {
+        width: 100%;
+    }
+
+    .pedido-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .pedido-form-actions button {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   ÓRDENES DISPONIBLES
+   ========================================================= */
+
+.pedido-resultados-orden {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.pedido-orden-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    transition: all 0.2s ease;
+}
+
+.pedido-orden-card:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Información principal de la orden */
+
+.pedido-orden-card-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pedido-orden-principal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.pedido-orden-codigo {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.pedido-orden-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.pedido-orden-datos strong {
+    font-size: 15px;
+    color: #0f172a;
+}
+
+.pedido-orden-datos span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Información secundaria */
+
+.pedido-orden-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+}
+
+.pedido-orden-meta span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Botón seleccionar */
+
+.btn-seleccionar-pedido {
+    flex-shrink: 0;
+
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.btn-seleccionar-pedido:hover {
+    background: #1d4ed8;
+}
+
+/* Prioridad */
+
+.prioridad-pedido {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    font-size: 11px !important;
+    font-weight: 600;
+}
+
+.prioridad-baja {
+    background: #dcfce7;
+    color: #166534 !important;
+}
+
+.prioridad-normal {
+    background: #dbeafe;
+    color: #1d4ed8 !important;
+}
+
+.prioridad-alta {
+    background: #fef3c7;
+    color: #92400e !important;
+}
+
+.prioridad-urgente {
+    background: #fee2e2;
+    color: #b91c1c !important;
+}
+
+/* Estado de la orden */
+
+.pedido-orden-meta .estado-pedido {
+    display: inline-flex;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.pedido-orden-meta .estado-atendido-parcialmente {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .pedido-orden-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-seleccionar-pedido {
+        width: 100%;
+    }
+
+    .pedido-orden-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+
